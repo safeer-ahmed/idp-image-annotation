@@ -1,12 +1,19 @@
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import "./App.css";
+import { seq1, seq2, seq3, seq4, seq5 } from "./assets/images/images";
+import LineChart from "./components/LineChart";
 import sprite from "./sprite.svg";
 
 const images = [
-  "https://res.cloudinary.com/ifeomaimoh/image/upload/v1652345767/demo_image2.jpg",
-  "https://res.cloudinary.com/ifeomaimoh/image/upload/v1652366604/demo_image5.jpg",
-  "https://res.cloudinary.com/ifeomaimoh/image/upload/v1652345874/demo_image1.jpg",
+  seq1,
+  seq2,
+  seq3,
+  seq4,
+  seq5
+  // "https://res.cloudinary.com/ifeomaimoh/image/upload/v1652345767/demo_image2.jpg",
+  // "https://res.cloudinary.com/ifeomaimoh/image/upload/v1652366604/demo_image5.jpg",
+  // "https://res.cloudinary.com/ifeomaimoh/image/upload/v1652345874/demo_image1.jpg",
 ];
 
 function App() {
@@ -108,6 +115,11 @@ function App() {
           </div>
         ))}
       </Carousel>
+
+      <div>
+        <LineChart />
+      </div>
+
     </div>
   );
 }
